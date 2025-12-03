@@ -1,0 +1,28 @@
+# --- Robot Framework (Logs e Reports) ---
+log.html
+report.html
+output.xml
+*.log
+screenshots/
+venv/
+
+# --- Python (Cache e Compilados) ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Node.js (Dependências e Logs) ---
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+package.json
+
+# --- Browser Library / Playwright ---
+rfbrowser-init.log
+
+# --- IDEs e Sistema Operacional ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
