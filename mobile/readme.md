@@ -18,6 +18,7 @@
 - Criando um ambiente virtual venv: virtualenv venv
 - Ativando o venv no windows: . .\venv\Scripts\activate
 - pip install -r requirements.txt
+-
 
 ## Como rodar
 - Para rodar: robot -d ./logs tests/home.robot
