@@ -21,5 +21,5 @@
 -
 
 ## Como rodar
-- Para rodar: robot -d ./logs tests/home.robot
+- Para rodar: robot -d ./logs tests/click.robot
 - -d: diretorio dos report do robot

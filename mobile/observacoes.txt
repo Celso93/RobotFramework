@@ -1,0 +1,10 @@
+Trabalhando com o ploguin RobotCode no vscode:
+O problema de IntelliSense no RobotCode é quase sempre causado pela extensão não conseguir encontrar ou se conectar ao ambiente virtual (venv) correto.
+O RobotCode precisa saber exatamente qual python.exe está com o Robot Framework e suas bibliotecas (AppiumLibrary, SeleniumLibrary, etc.) instaladas.
+Aqui estão os passos concisos de verificação no VS Code:
+
+1. Verifique o Interpretador Python
+Este é o passo mais crucial. O VS Code precisa estar apontando para o seu venv ativo.
+Olhe a Barra de Status: No canto inferior direito do VS Code, você verá o interpretador Python selecionado.
+Ação: Clique nele e selecione o python.exe que está dentro da pasta do seu ambiente virtual (ex: ...\robot_courses\mobile\venv\Scripts\python.exe).
+Observação: Mudar o interpretador fará o RobotCode recarregar o servidor, o que deve resolver o IntelliSense.
