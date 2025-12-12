@@ -13,11 +13,16 @@ Abrir o menu lateral e verificar o clique simples
     Acessando O Menu E Clicando Em    Clique em Botões
     Validar O Botao    Clique Simples
 
-
 Abrir o menu lateral e verificar o clique Longo
-    [Tags]    wip
     [Documentation]    Teste para abrir o menu lateral e verificar o clique longo
     ...                Esse cenario esta bugado no APP o botao de clicar desaparece no momento do TAP
     Acessando A Tela Principal
     Acessando O Menu E Clicando Em    Clique em Botões
     Validar O Botao    Clique Longo
+
+Abrir o menu lateral e verificar check e raddio
+    [Documentation]    Teste para abrir o menu lateral e verificar check e radio
+    [Tags]    wip
+    Acessando A Tela Principal
+    Acessando O Menu E Clicando Em    Check e Radio
+    Check Em Todas As Tecnologias Que Utilizam Appium

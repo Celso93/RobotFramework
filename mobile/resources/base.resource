@@ -64,3 +64,11 @@ Validar O Botao
         Tap With Positions          2s    ${positions}
         Wait Until Page Contains    Isso é um clique longo
     END
+
+Check Em Todas As Tecnologias Que Utilizam Appium
+    Wait Until Page Contains    Check e Radio    timeout=10
+    Click Text    Checkbox
+    @{tecnologias}    Create List    Ruby   Python    Java    Javascript    C#    Robot Framework
+    FOR    ${tecnologia}    IN    @{tecnologias}
+        Click Element    xpath=//android.widget.CheckBox[contains(@text, "${tecnologia}")]
+    END
