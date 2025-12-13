@@ -72,3 +72,29 @@ Check Em Todas As Tecnologias Que Utilizam Appium
     FOR    ${tecnologia}    IN    @{tecnologias}
         Click Element    xpath=//android.widget.CheckBox[contains(@text, "${tecnologia}")]
     END
+
+Selecionando A Linguagem Preferida No Formato Radio Button
+    Wait Until Page Contains    Check e Radio    timeout=10
+    Click Text       Botões de radio
+    Click Element    xpath=//android.widget.RadioButton[@resource-id="com.qaxperience.yodapp:id/radioButton" and @text="Javascript "]
+
+Acessando o Login
+    Click Text    Login
+    Wait Until Page Contains    vamos testar o login?
+
+Enviando o dados de acesso
+    [Arguments]    ${usuario}    ${senha}
+    Input Text     com.qaxperience.yodapp:id/etEmail       ${usuario}
+    Input Text     com.qaxperience.yodapp:id/etPassword    ${senha}
+    Click Text     ENTRAR
+
+Espero encontrar a mensagem
+    [Arguments]    ${mensagem}
+    Wait Until Page Contains    ${mensagem}    timeout=10
+
+Valido O Spinner No App
+    Click Text    Cadastro
+    Click Element    xpath=//android.widget.TextView[@resource-id="android:id/text1"]
+    Wait Until Element is Visible    class=android.widget.ListView    timeout=10
+    Click Text    Jedi
+

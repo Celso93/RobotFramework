@@ -22,7 +22,35 @@ Abrir o menu lateral e verificar o clique Longo
 
 Abrir o menu lateral e verificar check e raddio
     [Documentation]    Teste para abrir o menu lateral e verificar check e radio
-    [Tags]    wip
     Acessando A Tela Principal
     Acessando O Menu E Clicando Em    Check e Radio
     Check Em Todas As Tecnologias Que Utilizam Appium
+
+Abrir o menu lateral e verifica o click em radio
+    [Documentation]    Teste para abrir o menu lateral e verificar check e radio
+    Acessando A Tela Principal
+    Acessando O Menu E Clicando Em    Check e Radio
+    Selecionando A Linguagem Preferida No Formato Radio Button
+
+Login Invalido No App
+    Acessando A Tela Principal
+    Acessando O Menu E Clicando Em    Formulários
+    Acessando o Login
+    Enviando o dados de acesso    teste@mail.com    123456
+    Espero encontrar a mensagem    Oops! Credenciais incorretas.
+
+Login Com Sucesso No App 
+    Skip    Credenciais nao estao funcionando no momento
+    Acessando A Tela Principal
+    Acessando O Menu E Clicando Em    Formulários
+    Acessando o Login
+    Enviando o dados de acesso     yoda@qax.cc    jedi
+    Espero encontrar a mensagem    Boas vindas, logado você está.
+
+Verificando o Spinner No App
+    [Documentation]    Teste para cadastrar um usuario novo no app
+    ...                Intuito e testar o componente SPINNER do android
+    [Tags]    wip
+    Acessando A Tela Principal
+    Acessando O Menu E Clicando Em    Formulários
+    Valido O Spinner No App
