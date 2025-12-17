@@ -98,3 +98,18 @@ Valido O Spinner No App
     Wait Until Element is Visible    class=android.widget.ListView    timeout=10
     Click Text    Jedi
 
+Acesso A Lista De Personagens E Deleto O
+    [Arguments]    ${personagem}
+    Click Text    Lista
+
+    ${element}    Get Element Location    xpath=//android.widget.TextView[@resource-id="com.qaxperience.yodapp:id/textAbout" and @text="@${personagem}"]/../../../(//android.widget.FrameLayout[@resource-id="com.qaxperience.yodapp:id/indicator"])[2]
+    ${new_x}      Evaluate    ${element}[x] - 600
+
+    Swipe     start_x=${element}[x]
+    ...       start_y=${element}[y]
+    ...       end_x=${new_x}
+    ...       end_y=${element}[y]
+    ...       duration=2s
+
+    Click Element    id=com.qaxperience.yodapp:id/btnRemove
+    Wait Until Page Does Not Contain    ${personagem}

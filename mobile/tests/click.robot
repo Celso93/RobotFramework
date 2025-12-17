@@ -50,7 +50,13 @@ Login Com Sucesso No App
 Verificando o Spinner No App
     [Documentation]    Teste para cadastrar um usuario novo no app
     ...                Intuito e testar o componente SPINNER do android
-    [Tags]    wip
     Acessando A Tela Principal
     Acessando O Menu E Clicando Em    Formulários
     Valido O Spinner No App
+
+Verificando o Swipe No App
+    [Documentation]    Teste para verificar o swipe no app
+    ...                Intuito e testar o componente SWIPE do android
+    Acessando A Tela Principal
+    Acessando O Menu E Clicando Em    Star Wars
+    Acesso A Lista De Personagens E Deleto O     darthvader
