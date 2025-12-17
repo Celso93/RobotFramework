@@ -21,6 +21,6 @@
 -
 
 ## Como rodar
-- Para rodar: robot -d ./logs tests/click.robot
+- Para rodar: robot -d ./logs tests/yodapp.robot
 - -d: diretorio dos report do robot
-- robot -d ./logs -i wip tests/click.robot
+- robot -d ./logs -i wip tests/yodapp.robot

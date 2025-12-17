@@ -1,0 +1,2 @@
+Zip do projeto pra facilitar a localizacao
+nao instalar o projeto na raiz

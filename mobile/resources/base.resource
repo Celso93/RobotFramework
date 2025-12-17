@@ -12,7 +12,7 @@ Inicializando O App
     ...                 platformName=Android
     ...                 deviceName=Android Emulator
     ...                 automationName=UIAutomator2
-    ...                 app=${EXECDIR}/yodapp.apk
+    ...                 app=${EXECDIR}/apk/yodapp.apk
     ...                 udid=emulator-5554
     ...                 autoGrantPermissions=true
 
